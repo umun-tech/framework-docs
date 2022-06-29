@@ -1,0 +1,93 @@
+:root {
+  .loginContent {
+    background-image: url('../assets/login_back.png') !important;
+  }
+
+  ion-title, ion-list-header, ion-item, ion-col, ion-row {
+    color: var(--ion-color-dark);
+  }
+
+  ion-item {
+    ion-label {
+      color: var(--ion-color-dark);
+    }
+  }
+
+  ion-item:hover {
+    --background: rgba(var(--ion-color-light-rgb), 0.3) !important;
+    --color: var(--ion-color-dark) !important;
+  }
+
+  ion-searchbar {
+    color: var(--ion-color-dark);
+    input {
+      background: var(--ion-color-light) !important;
+    }
+  }
+
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  textarea:-webkit-autofill,
+  textarea:-webkit-autofill:hover,
+  textarea:-webkit-autofill:focus,
+  select:-webkit-autofill,
+  select:-webkit-autofill:hover,
+  select:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0px 1000px var(--ion-card-background) inset !important;
+  }
+
+  .active-item {
+    --ion-text-color: var(--ion-color-primary);
+    color: var(--ion-color-primary) !important;
+  }
+
+
+  --sof-positions-card-margin: 8px;
+
+  ion-modal.fullscreen {
+    --width: 100%;
+    --height: 100%;
+    --border-radius: 0;
+  }
+
+  .ng-select .ng-select-container {
+    background-color: var(--ion-color-light);
+    color: var(--ion-color-dark);
+    border: none;
+  }
+
+  .transparentInput .ng-select-container  {
+    background-color: transparent;
+  }
+
+  .ng-dropdown-panel {
+    border: none;
+    .ng-dropdown-panel-items .ng-option {
+      background-color: var(--ion-color-light);
+      color: var(--ion-color-dark);
+      border: none;
+    }
+
+    .ng-dropdown-panel-items{
+      .ng-option.ng-option-marked {
+        color: var(--ion-color-primary-contrast);
+        background: var(--ion-color-primary);
+      }
+
+      ng-option.ng-option-selected,
+      {
+        color: var(--ion-color-primary-contrast);
+        background: var(--ion-color-primary);
+      }
+    }
+  }
+  ion-popover.organizationSelectorComponent{ --min-width: 400px !important; }
+  ion-modal.fullscreen {
+    --width: 98%;
+    --height: 98%;
+    --border-radius: 8px;
+  }
+}
+
+@import "core";
